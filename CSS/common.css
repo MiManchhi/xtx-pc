@@ -2,10 +2,7 @@
     margin: 0 auto;
     width: 1240px;
 }
-a {
-    color: white;
-    text-decoration: none;
-}
+/* ------------------------------快捷导航--------------------- */
 .shortcut {
     height: 52px;
     background-color: #333;
@@ -34,4 +31,127 @@ a {
 }
 .shortcut li .login {
     color: #5EB69C;
+}
+.shortcut a {
+    color: white;
+}
+/* ---------------------------------导航---------------------------- */
+.head {
+    display: flex;
+    height: 88px;
+    /* background-color: pink; */
+    margin-top: 22px;
+    margin-bottom: 22px;
+}
+/* -------------------------------logo----------------------------- */
+.logo {
+    width: 200px;
+    height: 88px;
+    /* background-color: skyblue; */
+    margin-right: 40px;
+}
+.logo a {
+    display: block;
+    width: 200px;
+    height: 88px;
+    font-size: 0;
+    background-image: url(../images/logo.png);
+    background-size: contain;
+}
+.nav {
+    margin-top: 33px;
+    margin-right: 28px;
+}
+.nav ul {
+    display: flex;
+}
+.nav ul li {
+    margin-left: 47px;
+}
+.nav ul li a {
+    padding-bottom: 10px;
+}
+.nav ul li a:hover {
+    border-bottom: 2px solid #5EB69C;
+    color: #5EB69C;
+}
+/* --------------------------------------搜索------------------------- */
+.search {
+    display: flex;
+    margin-top: 33px;
+    margin-right: 45px;
+    width: 170px;
+    height: 34px;
+    border-bottom: 2px solid #F4F4F4;
+}
+.search input {
+    flex: 1;
+    /* 浏览器优先生效input的默认宽度,所以flex:1不生效 */
+    /* 解决方法:重置input的默认宽度 */
+    width: 0;
+    border: 0;
+}
+.search .iconfont {
+    font-size: 18px;
+    margin-right: 8px;
+    color: #ccc;
+}
+.search input::placeholder {
+    font-size: 16px;
+    color: #ccc;
+}
+/* -------------------------------购物车---------------------- */
+.cart {
+    position: relative;
+    margin-top: 32px;
+}
+.cart .iconfont {
+    font-size: 24px;
+}
+.cart i {
+    position: absolute;
+    top: 1px;
+    /* right定位右对齐，如果文字多了，向左撑开 */
+    /* left左对齐，享有撑开 */
+    left: 15px;
+    height: 15px;
+    padding: 0 6px;
+    line-height: 15px;
+    color: #FFFEFE;
+    font-size: 14px;
+    background-color: #E26237;
+    border-radius: 8px;
+}
+/* -------------------------------底部------------------- */
+.foot {
+    height: 580px;
+    background-color: #F5F5F5;
+}
+.service {
+    height: 178px;
+    padding: 60px 0;
+    border-bottom: 1px solid #E8E8E8;
+}
+.service ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+.service li {
+    display: flex;
+    width: 190px;
+    height: 58px;
+    background-color: pink;
+}
+.service li h5 {
+    width: 58px;
+    height: 58px;
+    background-image: url(../images/logo.png);
+    background-size: contain;
+}
+.help {
+    height: 300px;
+    background-color: pink;
+}
+.copyright {
+   height: 100px;
 }

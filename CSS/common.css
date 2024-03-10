@@ -140,18 +140,75 @@
     display: flex;
     width: 190px;
     height: 58px;
-    background-color: pink;
+    /* background-color: pink; */
 }
 .service li h5 {
     width: 58px;
     height: 58px;
+    margin-right: 8px;
     background-image: url(../images/logo.png);
     background-size: contain;
 }
+.service li p {
+    font-size: 28px;
+    line-height: 58px;
+}
 .help {
     height: 300px;
-    background-color: pink;
+    display: flex;
+    /* background-color: pink; */
+}
+.help .left {
+    display: flex;
+}
+.help .left dl {
+    margin-right: 84px;
+}
+.help .left dl:last-child {
+    margin-right: 0;
+}
+.help .left dt {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.help .left dd {
+    margin-bottom: 10px;
+}
+.help .left a {
+    color: #969696;
+}
+.help .left .iconfont {
+    color: #5EB69C;
+}
+.help .right ul {
+    display: flex;
+}
+.help .right li:first-child {
+    margin-right: 55px;
+    margin-left: 5px;
+}
+.help .right ul .pic {
+    margin-bottom: 10px;
+    width: 120px;
+    height: 120px;
+}
+.help .right ul img {
+    width: 120px;
+    height: 120px;
+}
+.help .right ul li p {
+    text-align: center;
 }
 .copyright {
-   height: 100px;
+    text-align: center;
+}
+.copyright p {
+    margin-bottom: 10px;
+    color: #A1A1A1;
+}
+.copyright p a{
+    margin: 0 10px;
+    padding-right: 8px;
+    color: #A1A1A1;
+    border-right: #A1A1A1 solid 2px;
 }

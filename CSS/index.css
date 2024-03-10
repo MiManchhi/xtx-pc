@@ -1,0 +1,73 @@
+.banner {
+    height: 500px;
+    background-color: #F5F5F5;
+}
+.banner .wrapper {
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    /* background-color: pink; */
+}
+.banner .wrapper .pic {
+    display: flex;
+}
+.banner .wrapper .subnav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 500px;
+    background-color: rgb(0,0,0,0.42);
+}
+.subnav li {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 12px;
+    color: white;
+    line-height: 50px;
+    cursor: pointer;
+}
+.subnav li a {
+    margin-right: 5px;
+    font-size: 14px;
+    color: white;
+}
+.subnav li .classify {
+    font-size: 16px;
+    margin-right: 14px;
+}
+.subnav .iconfont {
+    font-size: 14px;
+}
+.subnav li:hover {
+    background-color: #00BE9A;
+}
+.banner ol {
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    display: flex;
+    cursor: pointer;
+}
+.banner ol li {
+    width: 22px;
+    height: 22px;
+    margin-left: 8px;
+    border-radius: 50%;
+}
+.banner ol i {
+    display: block;
+    margin: 4px;
+    width: 14px;
+    height: 14px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+}
+.banner ol .current {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.banner ol .current i {
+    background-color: #fff;
+}

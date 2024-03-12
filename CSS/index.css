@@ -71,3 +71,136 @@
 .banner ol .current i {
     background-color: #fff;
 }
+/* ------------------------新鲜好物------------------------- */
+.title {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    height: 42px;
+    /* background-color: pink; */
+}
+.title .left {
+    display: flex;
+}
+.title .left h3 {
+    margin-right: 35px;
+    font-size: 30px;
+}
+.title .left p {
+    align-self: flex-end;
+    color: #A1A1A1;
+}
+.title .right .more{
+    line-height: 42px;
+    color: #A1A1A1;
+}
+.title .right .more .iconfont {
+    margin-left: 10px;
+}
+.content ul {
+    display: flex;
+    justify-content: space-between;
+}
+.content li {
+    width: 304px;
+    height: 404px;
+    background-color: #EEF9F4;
+    transition: top .3s, box-shadow .3s;
+}
+.content li:hover {
+    /* top: -3px; */
+    box-shadow: 0 3px 8px rgba(0,0,0,.2);
+}
+.content li .pic,.content li img {
+    width: 304px;
+    height: 304px;
+}
+.content .text {
+    text-align: center;
+}
+.content .text h4 {
+    margin-top: 18px;
+    margin-bottom: 8px;
+    font-size: 20px;
+}
+.goods .content li p {
+    color: red;
+    font-size: 18px;
+}
+.goods .content li p span {
+    font-size: 22px;
+}
+/* ----------------人气推荐----------------- */
+.recommend .content .text h4 {
+    margin-top: 18px;
+    margin-bottom: 18px;
+    font-size: 18px;
+}
+/* ------------------生鲜------------------ */
+.fresh .title {
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+.fresh .title .right {
+    display: flex;
+}
+.fresh .title .right ul {
+    display: flex;
+    margin-top: 10px;
+    margin-right: 58px;
+}
+.fresh .title .right ul a {
+    display: block;
+    margin-left: 6px;
+    padding: 0 7px;
+    line-height: 20px;
+    height: 20px;
+}
+.fresh .title .right ul .active {
+    color: #fff;
+    background-color: #00BE9A;
+}
+.fresh .content {
+    display: flex;
+    justify-content: space-between;
+}
+.fresh .content .left {
+    width: 248px;
+    height: 610px;
+    /* background-color: pink; */
+}
+.fresh .content .right {
+    width: 968px;
+    height: 610px;
+    /* background-color: pink; */
+}
+.fresh .content .right ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+.fresh .content li {
+    padding: 10px 21px 0;
+    width: 242px;
+    height: 305px;
+    border: 2px solid skyblue;
+}
+.fresh .content .pic {
+    width: 200px;
+    height: 180px;
+}
+.fresh .info {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    height: 60px;
+    line-height: 19px;
+}
+.fresh .info h4 {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+.fresh .price {
+    color: red;
+    font-size: 22px;
+}

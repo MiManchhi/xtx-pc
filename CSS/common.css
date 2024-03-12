@@ -146,8 +146,10 @@
     width: 58px;
     height: 58px;
     margin-right: 8px;
-    background-image: url(../images/logo.png);
-    background-size: contain;
+}
+.service li h5 img {
+    width: 58px;
+    height: 58px;
 }
 .service li p {
     font-size: 28px;

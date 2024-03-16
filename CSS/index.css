@@ -180,10 +180,46 @@
     flex-wrap: wrap;
 }
 .fresh .content li {
+    position: relative;
     padding: 10px 21px 0;
     width: 242px;
     height: 305px;
-    border: 2px solid skyblue;
+    border: 2px solid #fff;
+    overflow: hidden;
+}
+.fresh .content li:hover {
+    border: 2px solid #00BE9A;
+}
+.fresh .content .right li .cover {
+    position: absolute;
+    left: 0;
+    bottom: -86px;
+    width: 242px;
+    height: 84px;
+    padding-top: 15px;
+    color: white;
+    text-align: center;
+    background-color: #00BE9A;
+    transition: all 0.5s;
+}
+.fresh .content .right .cover p:first-child 
+{
+    font-size: 18px;
+}
+.fresh .content .right .cover p:nth-child(2) {
+    width: 120px;
+    height: 1px;
+    background-color: rgb(255,255,255,0.11);
+    margin: 3px auto 6px;
+}
+.fresh .content .right .cover p:nth-child(3) {
+    font-size: 14px;
+}
+.fresh .content .right li:hover .cover {
+    bottom: 0;
+}
+.fresh .content .right .cover .iconfont {
+    font-size: 14px;
 }
 .fresh .content .pic {
     width: 200px;

@@ -65,9 +65,7 @@
     <div class="banner">
         <div class="wrapper">
             <!-- 轮播图 -->
-            <ul class="pic">
-                <li><a href=""><img src="./uploads/banner_1.png" alt=""></a></li>
-                <li><a href=""><img src="./uploads/banner_1.png" alt=""></a></li>
+            <ul class="pic slidebanner">
                 <li><a href=""><img src="./uploads/banner_1.png" alt=""></a></li>
             </ul>
             <!-- 侧导航 -->
@@ -116,7 +114,7 @@
                 </ul>
             </div>
             <!-- 圆点指示器 -->
-            <div>
+            <div class="indicator">
                 <ol>
                     <li class="current"><i></i></li>
                     <li><i></i></li>
@@ -481,5 +479,31 @@
             </div>
         </div>
     </div>
+
+
+    <script>
+        let banner = [{url:'./uploads/banner_1.png'},
+        {url:'./uploads/banner_2.png'},
+        {url:'./uploads/banner_3.png'}]
+        const slidebanner = document.querySelector('.slidebanner img')
+        let i = 0
+        setInterval(() => {
+            i++
+            document.querySelector('.indicator .current').classList.remove('current')       
+            if(i === banner.length)
+            {
+                i = 0
+            }
+            slidebanner.style.opacity = 0;
+            //等待过渡的0.5s
+            setTimeout(() => {
+                slidebanner.src = banner[i].url
+                slidebanner.style.opacity = 1
+            }, 500);
+            //console.log(banner.length)
+            //console.log(i)
+            document.querySelector(`.indicator li:nth-child(${i + 1})`).classList.add('current')
+        },3000);
+    </script>
 </body>
 </html>

@@ -71,6 +71,9 @@
 .banner ol .current i {
     background-color: #fff;
 }
+.slidebanner img {
+    transition: opacity 0.5s ease;
+}
 /* ------------------------新鲜好物------------------------- */
 .title {
     display: flex;
